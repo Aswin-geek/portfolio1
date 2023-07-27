@@ -1,0 +1,20 @@
+$(document).ready(function(){
+    $("#contact-form").validate({
+        rules:{
+            fname:{
+                required:true,
+                minlength:3
+            },
+            ph:{
+                required:true,
+                minlength:10,
+                maxlength:10,
+                number:true
+            },
+            msg:{
+                required:true,
+                minlength:5
+            }
+        } 
+    })
+})
